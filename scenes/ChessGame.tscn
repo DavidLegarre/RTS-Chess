@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgu3vkenm6rwe"]
+
+[ext_resource type="Script" uid="uid://pnmky6jab5kl" path="res://scripts/Game.cs" id="1_5ebx6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5ebx6")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Board" type="GridContainer" parent="CenterContainer"]
+layout_mode = 2
+columns = 8

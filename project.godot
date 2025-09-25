@@ -11,8 +11,26 @@ config_version=5
 [application]
 
 config/name="RTS Chess"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+run/main_scene="uid://dw53hcxanyb71"
+config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ChessConstants="*res://scripts/ChessConstants.cs"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=1024
+
+[dotnet]
+
+project/assembly_name="RTS Chess"
+
+[editor]
+
+movie_writer/disable_vsync=true
 
 [rendering]
 

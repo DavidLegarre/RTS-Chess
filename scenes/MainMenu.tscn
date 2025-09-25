@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw53hcxanyb71"]
+
+[ext_resource type="Script" uid="uid://bgo14vw3l5u8v" path="res://scripts/MainMenu.cs" id="1_yqorp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vue75"]
+font_size = 44
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+size_flags_vertical = 0
+
+[node name="MainMenu" type="VBoxContainer" parent="."]
+layout_mode = 1
+offset_left = -242.0
+offset_right = 242.0
+offset_bottom = 650.0
+alignment = 1
+script = ExtResource("1_yqorp")
+
+[node name="Title" type="Label" parent="MainMenu"]
+layout_mode = 2
+text = "Chess RTS"
+label_settings = SubResource("LabelSettings_vue75")
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="MainMenu"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Buttons" type="VBoxContainer" parent="MainMenu"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 10
+
+[node name="NewGame" type="Button" parent="MainMenu/Buttons"]
+layout_mode = 2
+size_flags_vertical = 6
+action_mode = 0
+text = "New Game"
+
+[node name="JoinGame" type="Button" parent="MainMenu/Buttons"]
+layout_mode = 2
+text = "Join Game
+"
+
+[node name="Exit" type="Button" parent="MainMenu/Buttons"]
+layout_mode = 2
+text = "Exit"
